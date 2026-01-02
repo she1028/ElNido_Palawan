@@ -8,96 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>El Nido, Palawan</title>
     <link href="assets/elnidologo.png" rel="icon">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            height: 100vh;
-            overflow-x: hidden;
-            scroll-padding-top: 8em;
-            scroll-behavior: smooth;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-
-        .nav-link:hover {
-            color: black;
-        }
-
-        body::-webkit-scrollbar {
-            display: none;
-        }
-
-        .card-holder:hover img {
-            transform: scale(1.1);
-            transition: transform 0.5s ease;
-        }
-
-        .card-img {
-            transition: transform 0.5s ease;
-        }
-
-        .explore-text {
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .card:hover .explore-text {
-            opacity: 1;
-        }
-
-        .packages {
-            text-decoration: none;
-            color: gray;
-            border-bottom: 2px solid orange;
-        }
-
-        .home-text {
-            font-size: 1.1em;
-        }
-
-        .packages:hover {
-            background-color: rgb(255, 172, 19);
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-        }
-
-        .spot-btn:hover {
-            transform: scale(0.9);
-        }
-
-        .a-spot-search {
-            display: inline;
-            color: white;
-        }
-
-        .a-spot-search:hover {
-            color: rgb(77, 77, 77);
-        }
-
-        @media (max-width: 500px) {
-            .packages {
-                font-size: .9em;
-            }
-
-            .home-text {
-                font-size: 1em;
-            }
-
-            .nav-item {
-                font-size: .9em;
-            }
-
-            .filter-buttons {
-                font-size: .8em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -106,7 +17,6 @@
         <div class="container-fluid ps-4 pe-4">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/elnidologo.png" alt="Logo" class="logo" width="40" height="auto" class="w-100">
-
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -114,31 +24,27 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto ">
 
-                    <li class="nav-item"><a class="nav-link" href="#home"><i class="fa-solid fa-home me-2"
-                                style="color: green;"></i>Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#spots"><i class="fa-solid fa-map-location-dot me-2"
-                                style="color: green;"></i>Spots</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#packages"><i class="fa-solid fa-umbrella-beach me-2"
-                                style="color: green;"></i>Packages</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#explore"><i class="fa-solid fa-compass me-2"
-                                style="color: green;"></i>Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home"><i
+                                class="fa-solid fa-home me-2 text-success"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#spots"><i
+                                class="fa-solid fa-map-location-dot me-2 text-success"></i>Spots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#packages"><i
+                                class="fa-solid fa-umbrella-beach me-2 text-success"></i>Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#explore"><i
+                                class="fa-solid fa-compass me-2 text-success"></i>Explore</a></li>
                     <li class="nav-item"><a class="nav-link me-3" href="#location"><i
-                                class="fa-solid fa-location-dot me-2" style="color: green;"></i>Location</a></li>
-
-
+                                class="fa-solid fa-location-dot me-2 text-success"></i>Location</a></li>
                 </ul>
-
             </div>
         </div>
     </nav>
 
     <!-- Home -->
     <section id="home">
-        <div class="container-fluid align-items-center"
-            style="background-image: url(assets/cauroselpt1.webp); width: 100%; height: 85vh; background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="container-fluid align-items-center bg-animated" style="width: 100%; height: 85vh;">
             <div class="row align-items-center g-2 ms-5">
                 <div class="col-md-7 col-12">
-                    <div class=" display-1 fw-bold text-light" style="margin-top: 3em;"><span
+                    <div class=" display-1 fw-bold text-light" style="margin-top: 2.5em;"><span
                             style="color: orange;">E|</span> NIDO</div>
                 </div>
                 <div class="col-12">
@@ -147,8 +53,8 @@
             </div>
         </div>
 
-        <div class="container bg-light p-md-5 p-3 shadow-sm " style="margin-top: -5em; text-align: justify;">
-            <h3>About <span class="fw-bold" style="color: rgb(255, 172, 17);">E| NIDO</span></h3>
+        <div class="container bg-light p-md-5 p-3 shadow" style="margin-top: -5em; text-align: justify;">
+            <h3>About <span class="fw-bold text-warning">E| NIDO</span></h3>
             <div class="home-text">Explore the Beauty of El Nido Island
                 Located in the province of Palawan, Philippines, El Nido offers some of the most breathtaking landscapes
                 you’ll ever encounter. Famous for its crystal-clear lagoons, powdery white-sand beaches, and vibrant
@@ -161,17 +67,15 @@
             </div>
         </div>
     </section>
+
     <!-- Elnido Gallery -->
     <section>
-        <div class="container-fluid py-5 mt-5 z-1" style="background: 
-            url('assets/cauroselpt3.webp') center/cover no-repeat; backdrop-filter: blur(5px);">
-            <div
-                style="backdrop-filter: blur(5px); background-color: rgba(207, 207, 207, 0.085); position: absolute; inset: 0;">
-            </div>
+        <div class="container-fluid py-5 mt-5 z-1 gallery-container">
+            <div class="gallery-container-blur"></div>
             <div class="row">
                 <div class="col-12 text-center pb-5 z-2">
                     <div class="display-6 fw-bold"><i class="fa-solid fa-photo-film mx-auto"> </i> Gallery</div>
-                    <small style="color: rgb(217, 217, 217);">Discover the stunning beauty of El Nido Palawan.</small>
+                    <small class="text-light">Discover the stunning beauty of El Nido Palawan.</small>
                 </div>
             </div>
             <div class="row g-5">
@@ -349,87 +253,15 @@
                         <small class="text-muted">₱4,500 per person</small>
                     </a>
                 </div>
-
             </div>
         </div>
-
-        <style>
-            .package-card {
-                background: white;
-                border: 1px solid #f1f1f1;
-                transition: all 0.3s ease;
-                text-decoration: none;
-            }
-
-            .package-card:hover {
-                transform: translateY(-5px);
-                background: #fae4b3;
-                box-shadow: 0 6px 12px rgba(255, 193, 7, 0.25);
-                text-decoration: none;
-            }
-
-            .btn-outline-warning {
-                border: none;
-                background: #fff;
-                color: gray;
-                transition: all 0.3s ease;
-            }
-
-            .btn-outline-warning:hover,
-            .btn-outline-warning.active {
-                background: #ffc107;
-                color: #212529 !important;
-                font-weight: 600;
-            }
-
-            .module {
-                animation: fadeIn 0.4s ease;
-            }
-
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                    transform: translateY(10px);
-                }
-
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-        </style>
-
-        <script>
-            function showModule(category, event) {
-                const modules = document.querySelectorAll('.module');
-
-                modules.forEach(module => {
-                    if (category === 'all' || module.classList.contains(category)) {
-                        module.style.display = 'block';
-                    } else {
-                        module.style.display = 'none';
-                    }
-                });
-
-                const buttons = document.querySelectorAll('.btn-group .btn');
-                buttons.forEach(btn => btn.classList.remove('active'));
-
-                if (event && event.target) {
-                    event.target.classList.add('active');
-                }
-            }
-
-            document.addEventListener('DOMContentLoaded', () => {
-                const defaultBtn = document.querySelector('.btn-group .btn');
-                showModule('all', { target: defaultBtn });
-            });
-        </script>
     </section>
 
 
     <!-- Spots Section-->
     <section id="spots">
         <div class="container-fluid bg-dark mt-5 pb-5">
+
             <!-- first spot -->
             <div class="row g-5 d-flex justify-content-center mb-5">
                 <div class="col-12 text-center">
@@ -506,8 +338,6 @@
         </div>
     </section>
 
-
-
     <!-- Explore Section -->
     <section id="explore">
         <div class="container-fluid"
@@ -526,7 +356,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-xxl-3 col-md-5 col-11 mt-5">
+                    <div class="col-xxl-3 col-md-3 col-11 mt-5">
                         <div class="card card-holder border-0 position-relative overflow-hidden">
                             <img src="assets/photo1.jpg" card-img alt="Caramoan Islands">
 
@@ -551,7 +381,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xxl-3 col-md-5 col-11 mt-5">
+                    <div class="col-xxl-3 col-md-3 col-11 mt-5">
                         <div class="card card-holder border-0 position-relative overflow-hidden">
                             <img src="assets/photo2.jpg" class="card-img" alt="Baguio">
 
@@ -574,7 +404,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xxl-3 col-md-5 col-11 mt-5">
+                    <div class="col-xxl-3 col-md-3 col-11 mt-5">
                         <div class="card card-holder border-0 position-relative overflow-hidden">
                             <img src="assets/photo3.jpg" class="card-img" alt="Tagaytay">
 
@@ -597,7 +427,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xxl-3 col-md-5 col-11 mt-5">
+                    <div class="col-xxl-3 col-md-3 col-11 mt-5">
                         <div class="card card-holder border-0 position-relative overflow-hidden">
                             <img src="assets/photo4.jpg" class="card-img" alt="Banaue Rice Terraces">
 
@@ -656,22 +486,100 @@
     </section>
 
     <!-- Footer -->
-    <div class="container-fluid bg-dark">
-        <div class="row text-light">
-            <div class="col text-center pt-4">
-                <p>&copy; 2025 Shella May Cuenca
-                    | &copy; Vacationhive Website | All Rights Reserved. </p>
+    <section>
+        <div class="container-fluid h-50 p-2 m-0" style="background-color: rgb(17, 17, 17);">
+            <div class="row mx-5 g-5 text-center justify-content-center align-items-center py-3">
 
+                <div class="col-lg-4 col-11">
+                    <div class="fs-3 fw-bold text-start" style="color: plum;">Connect with me</div>
 
-
+                    <ul class="text-start" style="list-style-type: none;">
+                        <li>
+                            <a href="https://github.com/she1028" target="_blank"
+                                class="nav-link1 mx-2 text-light text-decoration-none" title="she1028.github.io">
+                                <i class="fab fa-github"></i> she1028.github.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:shellamaycuenca12@email.com"
+                                class="nav-link1 mx-2 text-light text-decoration-none" target="_blank"
+                                title="shellamaycuenca12@gmail.com">
+                                <i class="fas fa-envelope "></i> shellamaycuenca12@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/@She2804" target="_blank"
+                                class="nav-link1 mx-2 text-light text-decoration-none" title="@She2804">
+                                <i class="fab fa-telegram"></i> She2804
+                            </a>
+                        </li>
+                        <li>
+                            <a href="viber://chat?number=639319575334" target="_blank"
+                                class="nav-link1 mx-2 text-light text-decoration-none">
+                                <i class="fab fa-viber"></i> +63 931 957 5334
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-11">
+                    <div class="fs-3 fw-bold" style="color: plum;">Explore</div>
+                    <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                        <li><a class="nav-link1 text-light text-decoration-none" aria-current="page"
+                                href="#home">Home</a></li>
+                        <li><a class="nav-link1 text-light text-decoration-none" aria-current="page"
+                                href="#spots">Spots</a></li>
+                        <li><a class="nav-link1 text-light text-decoration-none" aria-current="page"
+                                href="#packages">Packages</a></li>
+                        <li><a class="nav-link1 text-light text-decoration-none" aria-current="page"
+                                href="#explore">Explore</a></li>
+                        <li><a class="nav-link1 text-light text-decoration-none" aria-current="page"
+                                href="#location">Location</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-11">
+                    <img src="assets/Main_logo.png" class="w-25">
+                    <div class="text-light text-left">
+                        <div>
+                            <hr class="mx-5" style="border: 1px solid white;">
+                            <div class="text-center pb-3" style="color: #676767;">&copy; 2025 Shella May Cuenca | ©
+                                Vacationhive Website |
+                                All rights reserved.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+    </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
-    </div>
-    </div>
+    <script>
+        function showModule(category, event) {
+            const modules = document.querySelectorAll('.module');
+
+            modules.forEach(module => {
+                if (category === 'all' || module.classList.contains(category)) {
+                    module.style.display = 'block';
+                } else {
+                    module.style.display = 'none';
+                }
+            });
+
+            const buttons = document.querySelectorAll('.btn-group .btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            if (event && event.target) {
+                event.target.classList.add('active');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const defaultBtn = document.querySelector('.btn-group .btn');
+            showModule('all', { target: defaultBtn });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

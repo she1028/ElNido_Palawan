@@ -1,0 +1,169 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     height: 100vh;
+     overflow-x: hidden;
+     scroll-padding-top: 8em;
+     scroll-behavior: smooth;
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+ }
+
+ .nav-link:hover {
+     color: black;
+ }
+
+ body::-webkit-scrollbar {
+     display: none;
+ }
+
+ .card-holder:hover img {
+     transform: scale(1.1);
+     transition: transform 0.5s ease;
+ }
+
+ .card-img {
+     transition: transform 0.5s ease;
+ }
+
+ .explore-text {
+     opacity: 0;
+     transition: opacity 0.5s ease;
+ }
+
+ .card:hover .explore-text {
+     opacity: 1;
+ }
+
+ .packages {
+     text-decoration: none;
+     color: gray;
+     border-bottom: 2px solid orange;
+ }
+
+ .home-text {
+     font-size: 1.1em;
+ }
+
+ .packages:hover {
+     background-color: rgb(255, 172, 19);
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+ }
+
+ .spot-btn:hover {
+     transform: scale(0.9);
+ }
+
+ .a-spot-search {
+     display: inline;
+     color: white;
+ }
+
+ .a-spot-search:hover {
+     color: rgb(77, 77, 77);
+ }
+
+ @media (max-width: 500px) {
+     .packages {
+         font-size: .9em;
+     }
+
+     .home-text {
+         font-size: 1em;
+     }
+
+     .nav-item {
+         font-size: .9em;
+     }
+
+     .filter-buttons {
+         font-size: .8em;
+     }
+ }
+
+ .package-card {
+     background: white;
+     border: 1px solid #f1f1f1;
+     transition: all 0.3s ease;
+     text-decoration: none;
+ }
+
+ .package-card:hover {
+     transform: translateY(-5px);
+     background: #fae4b3;
+     box-shadow: 0 6px 12px rgba(255, 193, 7, 0.25);
+     text-decoration: none;
+ }
+
+ .btn-outline-warning {
+     border: none;
+     background: #fff;
+     color: gray;
+     transition: all 0.3s ease;
+ }
+
+ .btn-outline-warning:hover,
+ .btn-outline-warning.active {
+     background: #ffc107;
+     color: #212529 !important;
+     font-weight: 600;
+ }
+
+ .module {
+     animation: fadeIn 0.4s ease;
+ }
+
+ .gallery-container {
+     background:url('assets/cauroselpt3.webp') center/cover no-repeat;
+     backdrop-filter: blur(5px);
+ }
+
+ .gallery-container-blur {
+     backdrop-filter: blur(5px);
+     background-color: rgba(207, 207, 207, 0.085);
+     position: absolute;
+     inset: 0;
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(10px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ @keyframes change-bg {
+     0% {
+         background-image: url('assets/cauroselpt1.webp');
+     }
+
+     33% {
+         background-image: url('assets/cauroselpt2.webp');
+     }
+
+     66% {
+         background-image: url('assets/cauroselpt3.webp');
+     }
+
+     100% {
+         background-image: url('assets/cauroselpt1.webp');
+     }
+ }
+
+ .bg-animated {
+     animation: change-bg 8s infinite;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
